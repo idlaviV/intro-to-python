@@ -6,6 +6,7 @@
 
 ## lists are a collection of elements of any type within two [] brackets
 friends = ["Ben", "Maria", "Charly"]
+print(type(friends))
 
 meassures = [13, 91, 84, 3.1, 83.4, 65]
 
@@ -87,6 +88,10 @@ print(sum([1,2,3,4,5,6,12]))
 # first element has index 0, second 1, ...
 first = my_fruits[0] # -> returns first element
 
+# we can update entries in a list using the index like this:
+my_fruits[0] = "blue-berry"
+print(my_fruits)
+
 ## last element, cutting & len
 # you can cut simply using the :
 # cut of first element / return everything after the first element
@@ -118,6 +123,16 @@ print(len(my_fruits) - 1)
 my_fruits.append("lemon")
 print(my_fruits.index("lemon"))
 
+# .clear()
+# if we want to remove all elements from our list we can use the clear method:
+my_fruits.clear()
+print(my_fruits)
+
+
+# Multiplying lists
+# you can mulitply lists, basically repeating all elements *x times:
+print([1,2]*4)
+
 
 # you can also combine types and create for example an info list for everybody
 
@@ -135,66 +150,3 @@ second_friend_from_ben = all_infos[1][2][1]
 
 # a little messy -> for structured data & informations we can use dicts, 
 # the next thing we will talk about after the exercices
-
-## dicts 
-# a dict is a associative list:
-# in a list we can access elements via the index ([1]), in a dict we have 
-# key: value pirs and access elemts/values using a defined key.
-# Syntax is as follows:
-
-personal_info = {"name" : "Tilman"}
-print(personal_info)
-
-# for dicts wich hld more than one key-value pair the following 
-# is cleaner and clearer.
-# and of course we can aso use variables in dicts:
-my_job = "student"
-
-personal_info = {
-    "name": "Tilman",
-    "job": my_job,
-    "height": 1.78,
-}
-
-print(personal_info)
-
-# often lists of dictionaires are used, where every list entry represents one data point
-persons = [
-    personal_info,
-    {
-        "name": "Charly",
-        "job": "Teacher",
-        "height": 1.68
-    }
-]
-
-print(persons)
-
-# for naming the keys it is common to use snake_case with all lower chars 
-# (as for variables)
-
-# .update()
-# if we want to update (add new key:value paires / update existnig) a dict,
-# we can use the update method. if the key we specify already exists,
-# the method updates, else it appends
-personal_info.update({
-    "height": 1.69
-})
-print(personal_info)
-
-personal_info.update({
-    "has_pets": True
-})
-print(personal_info)
-
-personal_info.update({
-    "has_pets": False,
-    "job": "Taxi Driver"
-})
-
-print(personal_info)
-# pay attention if you used a variable -> change the values here 
-# -> updated everywhere
-print(persons)
-
-# todo: pyhton is call by reference?

@@ -158,3 +158,10 @@ print(f"Hi {name}!")
 # so we may have to convert to the respective type
 age = int(input("How old are you? \n> "))
 print(f"{age} years old, that's impressive!")
+
+# if you don't know the type of a variable you can use the type function:
+print(type(age))
+
+print(type(has_pets))
+
+print(type(bio))
