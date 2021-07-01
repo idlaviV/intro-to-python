@@ -85,6 +85,22 @@ print(sum_of_meassures)
 print(sum([1,2,3,4,5,6,12]))
 
 
+# min
+# get min of a list
+print(min([1,2,133, 124])
+print(min([12312,12124,44, 0, -31, -1])
+min_value = min([27,43,123,12,14])
+print(min_value)
+
+
+# max
+# get max of a list
+print(max([1,2,133, 124])
+print(max([12312,12124,44, 0, -31, -1])
+max_value = max([27,43,123,12,14])
+print(max_value)
+
+
 ## indexing
 # first element has index 0, second 1, ...
 first = my_fruits[0] # -> returns first element
