@@ -1,7 +1,7 @@
 
-# Printing, Calculator, Variables & Types
+# Printing, Calculator, Variables & Basic types
 
-## Basics printing
+## Basic printing
 print("Hello World!")
 
 # strings can be seperated/added via the plus sign
@@ -40,11 +40,11 @@ print(123/98)
 print(30%2)
 
 
-# python recognices BODML
+# python recognices PEMDAS
 print(2+4*2)
 print((2+4)*2)
 
-# potenzen
+# potencies work as well easily
 print(2**3)
 print(5**2)
 
@@ -55,6 +55,11 @@ print(5**2)
 name = "Tilman"
 age = 22
 height = 1.78
+
+# if you don't know the type of a variable you can use the type function:
+print(type(name))
+print(type(age))
+print(type(height))
 
 # suppose I grew every year of my life the same amount:
 # meaningfull names (yt py)
@@ -70,7 +75,9 @@ print(growth_per_year)
 # > TypeError: can only concatenate str (not "int") to str
 
 ## Types
-# There are different types in Python. The ones we focus on now are: 
+# There are different types in Python. The ones we focus on for now are:
+# integers, floats and strings
+
 # integers or int
 persons = 10
 number_of_apples = 1203
@@ -93,14 +100,14 @@ growth_per_year
 # syntax: round(number, round_position)
 # round_position: 0 round 1er, -1 round 10er, -2 round 100er, 
 # 1 round 0.x, 2 round 0.0x
-round(height, 1)
+print(round(height, 1))
 
 val = 126.471
-round(val, 0)
-round(val, -1)
-round(val, -2)
-round(val, 1)
-round(val, 2)
+print(round(val, 0))
+print(round(val, -1))
+print(round(val, -2))
+print(round(val, 1))
+print(round(val, 2))
 
 # strings or str
 name = "Leonhard Euler"
@@ -115,6 +122,10 @@ and analytic number theory.
 """
 source_url = "https://en.wikipedia.org/wiki/Leonhard_Euler"
 
+print(four)
+print(type(four))
+print(4)
+print(type(4))
 
 # we can convert variables:
 
@@ -159,9 +170,3 @@ print(f"Hi {name}!")
 age = int(input("How old are you? \n> "))
 print(f"{age} years old, that's impressive!")
 
-# if you don't know the type of a variable you can use the type function:
-print(type(age))
-
-print(type(has_pets))
-
-print(type(bio))

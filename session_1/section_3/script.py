@@ -1,5 +1,5 @@
 
-# Tuples and Dictinairies 2
+# Tuples and Dictionaries 
 
 ## tuples
 # the difference between lists and tuples ist that tuples are not 
@@ -23,7 +23,7 @@ print(coords.index(2))
 print(coords * 2)
 
 ## dicts 
-# a dict is a associative list:
+# a dict is an associative list:
 # in a list we can access elements via the index ([1]), in a dict we have 
 # key: value pairs and access elemts/values using a defined key.
 # Syntax is as follows:

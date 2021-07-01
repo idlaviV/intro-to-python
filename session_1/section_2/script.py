@@ -9,6 +9,7 @@ friends = ["Ben", "Maria", "Charly"]
 print(type(friends))
 
 meassures = [13, 91, 84, 3.1, 83.4, 65]
+print(meassures)
 
 # initialize empty list
 my_fruits = []
@@ -32,7 +33,7 @@ my_fruits.extend(new_fruits)
 print(my_fruits)
 
 # .count() number of occources of an element
-my_fruits.count("apple")
+print(my_fruits.count("apple"))
 
 ## working with lists: methods & indexing
 # .pop() - remove & return the last element - lists needs to be of min len 1
@@ -92,8 +93,8 @@ first = my_fruits[0] # -> returns first element
 my_fruits[0] = "blue-berry"
 print(my_fruits)
 
-## last element, cutting & len
-# you can cut simply using the :
+## cutting
+# you can cut simply using the ':' char
 # cut of first element / return everything after the first element
 # the my_fruits list stays the same!
 sliced_list = my_fruits[1:]
