@@ -17,12 +17,12 @@ value = "999.15"
 
 # For the nex task, we have a carpool with 100 cars, in every car 
 # there are 4 available seats. In total we have 30 drivers and 90 passangers
-# compute the carpool capacity (how many peaple can be transportet), 
+# compute the carpool capacity (how many people can be transportet), 
 # the average passengers per car, the number of empty cars and print out the results
 
 
 # as an addition make the total number of cars, available seats, driver and 
-# passangers dependent on user input
+# passengers dependent on user input
 
 
 
