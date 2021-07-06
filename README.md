@@ -25,4 +25,4 @@ As an editor I would recommend Atom. Which can be downloaded [here](https://atom
 The scripts for the first session can be found [here](https://github.com/MisterXY89/intro-to-python/tree/main/session_1).
 For every session I provide scripts and exercises in two formats: there are two notebooks - one script and one containing the exercises and single files in the respective folders.
 The script for session 1 can be found [here](https://colab.research.google.com/drive/16ORcXM3vurNakmwjL71yfgJg5yZRcGkh?usp=sharing).
-The exercises are [here](https://colab.research.google.com/drive/1-hDVVa8lnTNf5DOtNAVETQw9Ujgxx9lp?usp=sharing). 
+The exercises are [here](https://colab.research.google.com/drive/1Far5OmDTl9E64MoijVQH9XvzL9v-gPgW?usp=sharing). 
