@@ -18,7 +18,7 @@ def hello(name):
 hello("Tilman")
 hello("Sarah")
 
-# we can use a lot any number of arguments:
+# we can use any number of arguments:
 def hello(fname, lname):
     print(f"Hello {fname} {lname}!")
     
@@ -67,4 +67,24 @@ def hello(name, lang="en"):
 hello("Tilman")
 hello("Tilman", "de")
 hello("Tilman", lang="de")
+
+
+## Recursion
+# A function can call itself - recursion
+# whenever we use this, we need a break condition!
+
+# one easy example:
+def fib(prev1=0, prev2=1, stop=10):
+    if prev2 >= stop:
+        return 1
+    if prev1 == 0:
+        print(prev1)
+        print(prev2)
+    new_value = prev1 + prev2
+    print(new_value)
+    fib(prev2, new_value, stop=stop)
+    
+    
+fib()
+    
 

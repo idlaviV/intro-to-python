@@ -40,7 +40,7 @@ else:
 # good practice to have a fallback (else)
 
 
-## Strings, Lists and Conditions
+## Strings and Lists in Conditions
 banned_players = ["Tim", "Jara", "Jackie", "Peter"]
 name = "Tim"
 if name in banned_players:
@@ -132,7 +132,7 @@ skip_values = [3,5]
 while x < 6:
     if x in skip_values: 
         continue # skip to the top of the loop
-    print(x)    
+    print(x)
 
     
     

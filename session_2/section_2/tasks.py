@@ -7,4 +7,4 @@
 
 #------------------------------------------------------------------------------#
 # (2)
-# Write a function which simulates the for sum functuion without using any loop
+# Write a function which simulates the for sum function

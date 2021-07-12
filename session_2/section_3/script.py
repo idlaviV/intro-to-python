@@ -29,7 +29,7 @@ meassures = [*map(int, meassures)]
 print(meassures)
 
 # if we want to use our own function, we can simply use lambda functions:
-meassures = [*map(lambda x: x+= 1, meassures)]
+meassures = [*map(lambda x: x + 1, meassures)]
 print(meassures)
 
 
