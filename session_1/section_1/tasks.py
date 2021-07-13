@@ -17,7 +17,7 @@ hobby = "Creating messy python code"
 # print out a sentence containing all of your information
 print(f"My name is {your_name}, I\'m {age} years old. {hobby} is one of my hobbies.")
 
-# For the nex task, we have a carpool with 100 cars, in every car 
+# For the nex task, we have a carpool with 100 cars, in every car
 # there are 4 available seats. In total we have 30 drivers and 90 passengers
 # compute the carpool capacity (how many people can be transported),
 # the average passengers per car, the number of empty cars and print out the results
@@ -36,11 +36,11 @@ print(f"Empty cars: {empty_cars}")
 
 # as an addition make the total number of cars, available seats, driver and 
 # passengers dependent on user input
-
 cars = int(input("Input number of cars:\n >"))
 seats = int(input("Input number of seats per car:\n >"))
 drivers = int(input("Input number of drivers:\n >"))
 passengers = int(input("Input number of passengers:\n >"))
+
 
 carpool_capacity = min(cars, drivers) * seats
 if cars != 0:

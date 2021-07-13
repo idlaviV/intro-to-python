@@ -86,13 +86,19 @@ print(personal_info)
 # -> updated everywhere
 print(persons)
 
+# .get()
+# to access the value for a key we can use the get method:
+print(personal_info.get("name"))
+
+# alternativly we can use the same syntax we know from lists:
+name = personal_info["name"]
+
+my_height = personal_info["height"]
+print(f"My height is {personal_info['height']} and my name is {name}!")
+
 # another way to update (similar to lists)
 personal_info["height"] = 1.70
-
-# accessing values works similar:
-my_height = personal_info["height"]
-print(f"My height is {personal_info['height']}")
-
+print(personal_info)
 
 # .keys()
 # sometimes you may need all existing keys for a dict, you can get those 
