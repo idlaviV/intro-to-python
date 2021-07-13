@@ -2,6 +2,7 @@
 #------------------------------------------------------------------------------#
 # (1)
 # Write a function which simulates the for loop without using any loop
+# (printing out every value)
 
 
 
