@@ -1,7 +1,11 @@
 # Introduction to Python
+For every session I provide scripts and exercises in two formats: there are two notebooks - one script and one containing the exercises:
+
+## Session 3
+**Materials will be uploaded Monday evening.**
+
 
 ## Session 2
-For every session I provide scripts and exercises in two formats: there are two notebooks - one script and one containing the exercises:
 - [Script Notebook](https://colab.research.google.com/drive/1dlEN1Qi6ZKe_5Xq8nHAUmPAIihiJ6gKO?usp=sharing)
 - [Exercises Notebook](https://colab.research.google.com/drive/1kgthc0_MlW2hH3vA2iuihbYKwMopttXB?usp=sharing)
 
