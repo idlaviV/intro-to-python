@@ -31,6 +31,8 @@ f_stream.close()
 with open(file, "r") as stream:
     file_content = stream.read()
     
+print(file_content)
+    
     
 # but even with the 'with statement' there might be errors, e.g. file not found
 # in order to handle such problems we can use try, except:
