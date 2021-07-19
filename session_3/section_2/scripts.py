@@ -35,5 +35,96 @@ cc_df = pd.read_csv("data/cc_data.csv")
 # everything in pandas is a dataframe (df) - basically a table
 print(cc_df)
 
-# we can sort
+# show / return the first n lines
+print(cc_df.head(5)) 
+
+# show / return the last n lines
+print(cc_df.tail(5)) 
+
+# we can also create our own dataframe:
+df_data = [
+    {"name": "Tilman", "age": 22, "blob": 123},
+    {"name": "Vincent", "age": 26, "blob": "413"},
+    {"name": "Lavia", "age": 19, "blob": "eq3e"},
+    {"name": "Sven", "age": "34", "blob": ""},
+    {"name": "Jens", "age": 34, "blob": 18321412},
+]
+
+df = pd.DataFrame(df_data)
+print(df)
+
+# print out column names:
+
+# we can delete columns:
+del df["blob"]
+
+# Alternatively we can select only the ones we need/want:
+
+df = df[["name", "age"]]
+
+
+
+# accessing columns:
+print(df.name)
+
+# accessing rows:
+print(df.iloc[0])
+print(df.iloc[2])
+
+# accessing cells:
+print(df.iloc[0]["name"])
+print(df.name.iloc[0])
+print(df.loc[0, "name"])
+
+# We can slice rows similar to list slicing:
+print(df[2:4])
+
+
+# extending/appending data:
+df2 = pd.DataFrame([
+    {"name": "Marie", "age": 13, "blob": ""},
+    {"name": "Roxanne", "age": 22, "blob": "lights"}
+])
+df = df.append(df2)
+
+# drop an entire row:
+df.drop(0)
+
+# df.drop(-1) does not work
+
+# convert types
+
+df.age = df.age.astype(int)
+print(df)
+
+
+# pandas built in methods for easy stats / exploration:
+print(df.age.sum())
+print(df.age.mean())
+
+# more methods are:
+# .count()      Number of non-null observations
+# .sum()        Sum of values
+# .mean() 	    Mean of Values
+# .median() 	Median of Values
+# .mode() 	    Mode of values
+# .std() 	    Standard Deviation of the Values
+# .min()        Minimum Value
+# .max()        Maximum Value
+# .abs()        Absolute Value
+# .prod()       Product of Values
+# .cumsum()     Cumulative Sum
+# .cumprod()    Cumulative Product
+
+
+# pandas has some methods which help to get a first idea of the data:
+cc_df.describe()
+print(cc_df.T)
+
+
+# many more functionality .... 
+# https://pandas.pydata.org/pandas-docs/stable/reference/index.html
+# Simply search for what you want to do and read doc/reference
+# -> e.g. sort dataframe
+
 

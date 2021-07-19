@@ -2,7 +2,11 @@
 For every session I provide scripts and exercises in two formats: there are two notebooks - one script and one containing the exercises:
 
 ## Session 3
-**Materials will be uploaded Monday evening.**
+- [Script Notebook](https://colab.research.google.com/drive/1bEQMzf0qHynnl-gbVAcAcBX4PP4zKPtd?usp=sharing)
+- [Exercises Notebook](https://colab.research.google.com/drive/1curMnciqV3s0u-7aRpowB3xHgA7hm8rt?usp=sharing)
+
+And single files [scripts and exercises are here](https://github.com/MisterXY89/intro-to-python/tree/main/session_3). 
+There is a zip file for sesion 2 [here](https://github.com/MisterXY89/intro-to-python/tree/main/session_3/session_3.zip)
 
 
 ## Session 2
