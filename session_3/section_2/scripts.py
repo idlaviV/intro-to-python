@@ -94,7 +94,6 @@ df.drop(0)
 # df.drop(-1) does not work
 
 # convert types
-
 df.age = df.age.astype(int)
 print(df)
 
@@ -123,7 +122,7 @@ cc_df.describe()
 print(cc_df.T)
 
 
-# many more functionality .... 
+# Pandas has a lot more functions, methods and capabilities
 # https://pandas.pydata.org/pandas-docs/stable/reference/index.html
 # Simply search for what you want to do and read doc/reference
 # -> e.g. sort dataframe
