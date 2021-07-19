@@ -2,6 +2,25 @@
 For every session I provide scripts and exercises in two formats: there are two notebooks - one script and one containing the exercises:
 
 ## Session 3
+
+### PIP
+Open CMD/terminal/console and type `pip --version`. <br>
+If you still/as well have python2 installed you might have to type `pip3`. <br>
+Your output should look something like this: <br>
+> pip 21.1.2 from /home/linuxbrew/.linuxbrew/Cellar/python@3.9/3.9.1_1/lib/python3.9/site-packages/pip (python 3.9)
+
+[*See here on how to install pip if not installed*](https://www.makeuseof.com/tag/install-pip-for-python/).
+
+For this session we will need the `pandas` package.
+Install using pip: 
+`pip install pandas`
+
+To install any other package: <br>
+`pip install <package-name>`:
+For notebooks use: `!pip install pandas`<br>
+
+### Scripts & Exercises
+
 - [Script Notebook](https://colab.research.google.com/drive/1bEQMzf0qHynnl-gbVAcAcBX4PP4zKPtd?usp=sharing)
 - [Exercises Notebook](https://colab.research.google.com/drive/1curMnciqV3s0u-7aRpowB3xHgA7hm8rt?usp=sharing)
 
