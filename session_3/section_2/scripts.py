@@ -54,6 +54,7 @@ df = pd.DataFrame(df_data)
 print(df)
 
 # print out column names:
+df.keys()
 
 # we can delete columns:
 del df["blob"]
