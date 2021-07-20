@@ -50,14 +50,24 @@ with open("data/count_result.json", "w") as res_file:
 #this is completely optional
 question_enumerate = ["A","B","C","D"]
 
-def quiz(cat):
-    CATS = ["maths", "sport"]
-    if not cat.lower() in CATS:
-        print(f"This quiz has the following categories: {CATS}")
-        return False
+def read_data():
+  try:
     with open("data/quiz.json") as q_file:
         data = json.load(q_file)
-        # data = json.loads(q_file.read(q_file))    # another way
+        return data
+  except Exception as e:
+        print(f"Something went wrong: \n{e}")
+        return False
+
+def quiz(cat):    
+    data = read_data()
+    if not data:
+      return False    
+    categories = list(data["quiz"].keys())
+    if not cat.lower() in categories:
+        print(f"This quiz has the following categories: {categories}")
+        return False
+
     q_data = data["quiz"]
     questions = q_data[cat]
     q1 = questions["q1"]

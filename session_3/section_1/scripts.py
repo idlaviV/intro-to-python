@@ -88,7 +88,7 @@ import json
 # we have to options when loading a json file:
 # 1. read the file as text and the convert it to json (json.loads())
 with open("data/example.json", "r") as example_file:    
-    data = json.loads(q_file.read(q_file))
+    data = json.loads(example_file.read())
 
 
 # 2. or read it directly as json (json.load())
