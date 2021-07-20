@@ -29,4 +29,5 @@ print(df.groupby("location").sum("price"))
 
 
 # Determine the mean money spent at every location
+# the mean of the last 4 ccnums obv. doesn't make sense:D
 print(df.groupby("location").mean("price"))
