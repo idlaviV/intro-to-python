@@ -1,2 +1,11 @@
-listA = [2, 3, 4, 5, 0, 100, 424, 15, 53, -4]
-maxValue = max(listA)
+for index, entry in enumerate({"Tam", "Tim", "Tom"}):
+    print(f"{index}: {entry}")
+
+for index, entry in enumerate({"Tam", "Tom", "Tim"}):
+    print(f"{index}: {entry}")
+
+for index, entry in enumerate({"Tam", "Tom", "Tim"}):
+    print(f"{index}: {entry}")
+
+for index, entry in enumerate({"Tam", "Tom", "Tim"}):
+    print(f"{index}: {entry}")
