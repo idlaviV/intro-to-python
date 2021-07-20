@@ -6,9 +6,9 @@ print(s.lower())
 names = ["Tilman", "Clara", "Maria", "Iven", "Emma", "Mo"]
 
 # Lower all names in the names list
-names = [*map(lambda x: x.lower(), names)]
-names = [Str.lower(), names)]
+names = [str.lower, names]
 print(names)
+
 
 # Filter all names which include 2 'a':
 def count_a(string):
