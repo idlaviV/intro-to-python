@@ -54,12 +54,6 @@ with open(new_json_file, "w") as file:
 # Write a function which takes a category (of questions - math or sport) and then prompts the
 # respective question. Then show the user the different options and 
 # let him guess and evaluate his answer.
-questions_file = "data/quiz.json"
-with open(questions_file, "r") as file:
-    import_file = json.load(file)
-
-quiz = import_file["quiz"]
-
 
 def ask_question(questions, index):
     question = questions["q" + str(index)]
@@ -81,7 +75,14 @@ def ask_question(questions, index):
     return True
 
 
+questions_file = "data/quiz.json"
+with open(questions_file, "r") as file:
+    import_file = json.load(file)
+
+quiz = import_file["quiz"]
+
 while True:
+    error = False
     print("Please pick one of the following categories:")
     for key in quiz.keys():
         print("* " + key)
@@ -91,8 +92,10 @@ while True:
     try:
         category = user_input
         questions = quiz[user_input]
-        break
     except KeyError as e:
+        error = True
         print("Illegal category.")
-index = random.randint(1, len(questions))
-ask_question(questions, index)
+    if not error:
+        index = random.randint(1, len(questions))
+        ask_question(questions, index)
+        break
