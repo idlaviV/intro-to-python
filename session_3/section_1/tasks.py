@@ -1,5 +1,6 @@
 # importing a helper function
 import json
+import random
 
 from helper import prep_data
 
@@ -58,6 +59,28 @@ with open(questions_file, "r") as file:
     import_file = json.load(file)
 
 quiz = import_file["quiz"]
+
+
+def ask_question(questions, index):
+    question = questions["q" + str(index)]
+    print(question['question'])
+    print(question)
+    options = question['options']
+    for i in range(len(options)):
+        print("* " + options[i])
+    answer = input(">")
+    if answer == question["answer"]:
+        print("This is correct!")
+    else:
+        print("No. Guess again?")
+        again = input(">").lower()
+        if again == "y" or again == "yes":
+            ask_question(questions, index)
+        else:
+            print(f"Correct answer is \'{question['answer']}\'")
+    return True
+
+
 while True:
     print("Please pick one of the following categories:")
     for key in quiz.keys():
@@ -66,9 +89,10 @@ while True:
     if user_input == "q":
         break
     try:
-        category = quiz[user_input]
-        questions = quiz[category]
-        # for i in range(len(questions)):
-            # print(questions)
-    except Exception as e:
+        category = user_input
+        questions = quiz[user_input]
+        break
+    except KeyError as e:
         print("Illegal category.")
+index = random.randint(1, len(questions))
+ask_question(questions, index)
