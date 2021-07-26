@@ -1,6 +1,10 @@
 # Introduction to Python
 For every session I provide scripts and exercises in two formats: there are two notebooks - one script and one containing the exercises:
 
+## Session 4
+Materials will be uploaded later today - check again tomorrow :D
+
+
 ## Session 3
 
 ### PIP
