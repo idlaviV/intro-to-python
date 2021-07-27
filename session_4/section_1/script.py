@@ -25,7 +25,7 @@ plt.show()
 
 
 # let's look again at the example from last session:
-cc_df = pd.read_csv("data/cc_data.csv")
+cc_df = pd.read_csv("data/cc_data_1.csv")
 print(cc_df)
 
 # price by location is:
@@ -39,6 +39,7 @@ df.plot()
 plt.show()
 
 # use barchart plot -> makes more sense for this case:
+# see https://pandas.pydata.org/docs/getting_started/intro_tutorials/04_plotting.html
 df.plot.bar()
 plt.show()
 
