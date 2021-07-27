@@ -4,6 +4,11 @@ For every session I provide scripts and exercises in two formats: there are two 
 ## Session 4
 Materials will be uploaded later today - check again tomorrow :D
 
+- [Script Notebook](https://colab.research.google.com/drive/1abSQYIDFmuJuNwe13vEosMb1NNksGd-l?usp=sharing)
+- [Exercises Notebook](https://colab.research.google.com/drive/1rHfnMUowhz3SyuNBVMgYd2O3o7_Tdg1p?usp=sharing)
+
+And single files [scripts and exercises are here](https://github.com/MisterXY89/intro-to-python/tree/main/session_4). 
+There is a zip file for session 4 [here](https://github.com/MisterXY89/intro-to-python/tree/main/session_4/session_4.zip)
 
 ## Session 3
 
@@ -29,7 +34,7 @@ For notebooks use: `!pip install pandas`<br>
 - [Exercises Notebook](https://colab.research.google.com/drive/1curMnciqV3s0u-7aRpowB3xHgA7hm8rt?usp=sharing)
 
 And single files [scripts and exercises are here](https://github.com/MisterXY89/intro-to-python/tree/main/session_3). 
-There is a zip file for sesion 2 [here](https://github.com/MisterXY89/intro-to-python/tree/main/session_3/session_3.zip)
+There is a zip file for session 3 [here](https://github.com/MisterXY89/intro-to-python/tree/main/session_3/session_3.zip)
 
 
 ## Session 2
@@ -38,7 +43,7 @@ There is a zip file for sesion 2 [here](https://github.com/MisterXY89/intro-to-p
 
 
 And single files [scripts and exercises are here](https://github.com/MisterXY89/intro-to-python/tree/main/session_2). 
-There is a zip file for sesion 2 [here](https://github.com/MisterXY89/intro-to-python/tree/main/session_2/session_2.zip)
+There is a zip file for session 2 [here](https://github.com/MisterXY89/intro-to-python/tree/main/session_2/session_2.zip)
 
 ## Session 1
 The notebooks are here:
