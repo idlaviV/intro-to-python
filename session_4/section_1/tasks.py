@@ -50,8 +50,9 @@ def test_visualize_above():
 #       row.location
 
 
-def heatmap_location_date(df, locs):
+def heatmap_location_date(df):
     data_by_location = {}
+    locs = df['location'].tolist()
     for loc in locs:
         ta_in_loc = df.query(f'location == \"{loc}\"')
         data_by_location[loc] = ta_in_loc.groupby('date').size()
@@ -62,15 +63,7 @@ def heatmap_location_date(df, locs):
 
 def test_heatmap():
     cc_df = pd.read_csv("data/cc_data_1.csv")
-
-    locs = ['Carlyle Chemical Inc.', 'Nationwide Refinery', 'Daily Dealz', 'General Grocer', 'Roberts and Sons',
-            "Frank's Fuel", "Shoppers' Delight", 'Ouzeri Elian', "Albert's Fine Clothing", 'Bean There Done That',
-            'Hallowed Grounds', "Katerina's Cafe", 'Ahaggo Museum', 'Kronos Pipe and Irrigation', 'Coffee Cameleon',
-            "Guy's Gyros", 'U-Pump', 'Abila Scrapyard', 'Maximum Iron and Steel', 'Abila Zacharo', 'Chostus Hotel',
-            'Gelatogalore', 'Coffee Shack', 'Brewed Awakenings', "Brew've Been Served", 'Kronos Mart', 'Abila Airport',
-            'Kalami Kafenion', "Frydos Autosupply n' More", 'Desafio Golf Course', "Octavio's Office Supplies",
-            "Jack's Magical Beans", 'Stewart and Sons Fabrication', 'Hippokampos']
-    heatmap_location_date(cc_df, locs)
+    heatmap_location_date(cc_df)
 
 
 test_heatmap()
