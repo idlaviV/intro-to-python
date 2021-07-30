@@ -52,7 +52,8 @@ def test_visualize_above():
 
 def heatmap_location_date(df):
     data_by_location = {}
-    locs = df['location'].tolist()
+    locs = df['location'].unique()
+    print(locs)
     for loc in locs:
         ta_in_loc = df.query(f'location == \"{loc}\"')
         data_by_location[loc] = ta_in_loc.groupby('date').size()
