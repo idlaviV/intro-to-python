@@ -20,14 +20,37 @@ df[['hour', "minute"]] = df.time.str.split(":", expand=True)
 df[['day', 'month', 'year']] = df.date.str.split("/", expand=True)
 df['agg_day'] = df['month'].astype(int).apply(lambda x: x*31) + df['day'].astype(int)
 
-df['minutes'] = df['hour'].astype(int).apply(lambda x: x*60) \
-                + df['minute'].astype(int)
-df = df.drop(labels=['timestamp', 'location', 'time', 'hour', 'minute', 'day', 'month', 'year', 'date'], axis=1)
+import numpy as np
+from sklearn.datasets import load_digits
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+import matplotlib.pyplot as plt
+import seaborn as sns
+import pandas as pd
+import umap
+
+reducer = umap.UMAP()
+
+df = pd.read_csv("data/cc_data_2.csv")
 print(df)
-pca = PCA(n_components=4)
-cc_pca = pca.fit_transform(df)
-pc_df = pandas.DataFrame(data=cc_pca, columns=['PC1', 'PC2', 'PC3', 'PC4'])
-plt.figure(figsize=(12, 10))
-print(cc_pca)
-sns.scatterplot(x="PC1", y="PC2", data=pc_df, s=100)
+
+data = df[
+    [
+        "hour",
+        "price",
+        "last4ccnum",
+    ]
+].values
+scaled_data = StandardScaler().fit_transform(data)
+
+
+embedding = reducer.fit_transform(scaled_data)
+embedding.shape
+
+
+plt.scatter(
+    embedding[:, 0],
+    embedding[:, 1])
+plt.gca().set_aspect('equal', 'datalim')
+plt.title('UMAP projection of the CC dataset', fontsize=24)
 plt.show()
